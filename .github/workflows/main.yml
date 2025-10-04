@@ -1,0 +1,76 @@
+name: Xcode - Build
+
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs: 
+      release__nightly:
+        type: boolean
+        description: 'Create a nightly release'
+        required: false
+        default: false
+
+jobs:
+  build:
+    name: Build using xcodebuild command
+    runs-on: macos-latest
+    env:
+      scheme: homy
+      archive_path: archive
+
+    steps:
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16.2'
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Archive
+        env:
+          MD_APPLE_SDK_ROOT: /Applications/Xcode_16.2.app
+        run: |
+          xcodebuild archive \
+            -archivePath "$archive_path" \
+            -scheme "$scheme" \
+            -project "homy.xcodeproj" \
+            -sdk iphoneos \
+            -arch arm64 \
+            -configuration Release \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO | xcpretty && exit ${PIPESTATUS[0]}
+      
+      - name: Tar Build Artifact
+        run: tar -cvf "$archive_path.xcarchive.tar" "$archive_path.xcarchive"
+      
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcarchive
+          path: ${{ env.archive_path }}.xcarchive.tar
+          
+  package:
+    name: Create fake-signed ipa
+    runs-on: ubuntu-latest
+    needs: [build]
+    env:
+      scheme: homy
+      archive_path: archive
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: xcarchive
+          
+  release__nightly:
+    name: Nightly Release
+    permissions:
+      contents: write
+    if: inputs.release__nightly || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    needs: [package]
+    steps:
+      - uses: actions/checkout@v4
