@@ -9,13 +9,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4397F9512DCDDA0100090799 /* homy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4397F9512DCDDA0100090799 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4397F9532DCDDA0100090799 /* homy */ = {
+		4397F9532DCDDA0100090799 /* app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = homy;
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -60,9 +60,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4397F9502DCDDA0100090799 /* homy */ = {
+		4397F9502DCDDA0100090799 /* app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "homy" */;
+			buildConfigurationList = 4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
 				4397F94D2DCDDA0100090799 /* Sources */,
 				4397F94E2DCDDA0100090799 /* Frameworks */,

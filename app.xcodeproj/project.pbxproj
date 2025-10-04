@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4397F9512DCDDA0100090799 /* homy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4397F9512DCDDA0100090799 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4397F9542DCDDA0100090799 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4397F9562DCDDA0100090799 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4397F9582DCDDA0200090799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		4397F9482DCDDA0100090799 = {
 			isa = PBXGroup;
 			children = (
-				4397F9532DCDDA0100090799 /* homy */,
+				4397F9532DCDDA0100090799 /* app */,
 				4397F9522DCDDA0100090799 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,27 +41,27 @@
 		4397F9522DCDDA0100090799 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4397F9512DCDDA0100090799 /* homy.app */,
+				4397F9512DCDDA0100090799 /* app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4397F9532DCDDA0100090799 /* homy */ = {
+		4397F9532DCDDA0100090799 /* app */ = {
 			isa = PBXGroup;
 			children = (
 				4397F9542DCDDA0100090799 /* App.swift */,
 				4397F9562DCDDA0100090799 /* ContentView.swift */,
 				4397F9582DCDDA0200090799 /* Assets.xcassets */,
 			);
-			path = homy;
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4397F9502DCDDA0100090799 /* homy */ = {
+		4397F9502DCDDA0100090799 /* app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "homy" */;
+			buildConfigurationList = 4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
 				4397F94D2DCDDA0100090799 /* Sources */,
 				4397F94E2DCDDA0100090799 /* Frameworks */,
@@ -71,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = homy;
-			productName = homy;
-			productReference = 4397F9512DCDDA0100090799 /* homy.app */;
+			name = app;
+			productName = app;
+			productReference = 4397F9512DCDDA0100090799 /* app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -92,7 +92,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4397F94C2DCDDA0100090799 /* Build configuration list for PBXProject "homy" */;
+			buildConfigurationList = 4397F94C2DCDDA0100090799 /* Build configuration list for PBXProject "app" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -104,7 +104,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4397F9502DCDDA0100090799 /* homy */,
+				4397F9502DCDDA0100090799 /* app */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Homy;
+				INFOPLIST_KEY_CFBundleDisplayName = app;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -275,7 +275,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.homy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -295,7 +295,7 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Homy;
+				INFOPLIST_KEY_CFBundleDisplayName = app;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -307,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.homy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4397F94C2DCDDA0100090799 /* Build configuration list for PBXProject "homy" */ = {
+		4397F94C2DCDDA0100090799 /* Build configuration list for PBXProject "app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4397F95D2DCDDA0200090799 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "homy" */ = {
+		4397F95F2DCDDA0200090799 /* Build configuration list for PBXNativeTarget "app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4397F9602DCDDA0200090799 /* Debug */,
